@@ -197,8 +197,17 @@
 }
 
 @layer component {
+  canvas#bg-mouse-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: transparent !important;
+  }
+
   .header-hero-wrapper {
-    background-image: url(/hero.webp);
+    background-image: url(/public/hero.webp);
     background-size: cover;
   }
 
@@ -306,7 +315,7 @@
   }
 
   .page-wrapper {
-    background-image: url(/background.webp);
+    background-image: url(/public/background.webp);
     background-size: cover;
   }
 
