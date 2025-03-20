@@ -3,6 +3,10 @@ import Link from "next/link";
 import "./home.css";
 import HeroTitle from "./components/hero-title";
 
+export async function generateStaticParams() {
+  return [{ locale: "en" }];
+}
+
 export default function Home() {
   return (
     <>
