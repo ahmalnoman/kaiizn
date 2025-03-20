@@ -11,7 +11,7 @@ const michroma = Michroma({
 });
 
 export const metadata: Metadata = {
-  title: "KAIZN",
+  title: "KAIIZN",
   description:
     "KAIZN is a leading software development house specializing in delivering innovative and tailored software solutions. We offer a wide range of services, including web and mobile app development, custom software solutions, and digital transformation strategies, helping businesses thrive in the digital age.",
 };
