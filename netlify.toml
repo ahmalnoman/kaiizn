@@ -1,0 +1,8 @@
+[build]
+command = "npm run build"
+publish = ".next/static"
+
+[[redirects]]
+from = "/*"
+to = "/src/app/page.tsx"
+status = 200
