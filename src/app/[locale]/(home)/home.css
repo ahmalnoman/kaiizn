@@ -1,3 +1,4 @@
+/* Migrate to TailwindCSS */
 @layer reset {
   *,
   *::before,
@@ -78,7 +79,7 @@
     --clr-orange: #f99412;
     --clr-purple: #3e2ba7;
     --clr-light-purple: #af7bf7;
-    --clr-light-black: #0d0d0d;
+    --clr-light-black: 13 13 13;
     --main-gradient: linear-gradient(90deg, #f26c1a 0%, #f89e0b 100%);
     --sub-gradient: linear-gradient(90deg, #af7bf7 0%, #5b40ff 100%);
     --heading-gradient: linear-gradient(180deg, #ffffff 41.99%, #999999 72.37%);
@@ -198,17 +199,8 @@
 }
 
 @layer component {
-  /* canvas#bg-mouse-trail {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: none;
-    background: transparent !important;
-  } */
-
   .header-hero-wrapper {
-    background-image: url(/public/hero.webp);
+    /* background-image: url(/hero.webp); */
     background-size: cover;
   }
 
@@ -218,6 +210,7 @@
   }
 
   .site-header__inner {
+    width: full;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem 2rem;
@@ -322,7 +315,7 @@
   }
 
   .page-wrapper {
-    background-image: url(/public/background.webp);
+    /* background-image: url(/background.webp); */
     background-size: cover;
   }
 
@@ -339,7 +332,7 @@
   .service-card {
     min-width: 371px;
     min-height: 371px;
-    background: var(--clr-light-black);
+    background: rgba(var(--clr-light-black), 0.3);
     border: 2px solid transparent;
     border-image: var(--background-border);
     border-image-slice: 1;
