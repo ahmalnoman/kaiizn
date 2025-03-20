@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import "./[locale]/(home)/home.css";
-import HeroTitle from "./[locale]/(home)/components/hero-title";
+import HeroTitle from "./components/hero-title";
+import "./home.css";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }];
