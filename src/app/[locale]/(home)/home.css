@@ -186,7 +186,8 @@
     padding-block: 3.75rem;
 
     @media (width > 760px) {
-      padding-block: 8rem;
+      padding-block-start: 8rem;
+      padding-block-end: 3rem;
     }
   }
 
@@ -199,8 +200,8 @@
 }
 
 @layer component {
-  .header-hero-wrapper {
-    /* background-image: url(/hero.webp); */
+  .page-wrapper {
+    background-image: url(/services-background.svg);
     background-size: cover;
   }
 
@@ -274,7 +275,13 @@
       margin-bottom: 3rem;
     }
 
-    &[data-width="large"] {
+    &[data-width="medium"] {
+      width: 239px;
+      height: 3px;
+      margin-inline: auto;
+    }
+
+    &[data-width="xlarge"] {
       width: 1063px;
       height: 3px;
       margin-inline: auto;
@@ -358,5 +365,17 @@
     font-size: var(--font-size-sm);
     font-weight: 300;
     text-align: center;
+  }
+
+  #about {
+    margin-block-end: 3rem;
+
+    h2 {
+      text-align: center;
+      font-family: var(--ff-body);
+      font-size: var(--font-size-heading-sm);
+      font-weight: 300;
+      letter-spacing: 0.1rem;
+    }
   }
 }
