@@ -398,8 +398,7 @@
 
   .title-image-wrapper {
     position: relative;
-    padding-block-end: 5rem;
-    height: 400px;
+    /* padding-block-end: 3rem; */
   }
 
   .hero-title {
@@ -411,13 +410,6 @@
     color: var(--main-heading-gradient);
     max-width: 100%;
     z-index: 10;
-
-    /* text-align: center; */
-
-    /* @media (width > 1000px) {
-      max-width: 100%;
-      text-align: center;
-    } */
   }
 
   .hero-image {
@@ -443,6 +435,7 @@
   }
 
   .hero-content {
+    padding-block-start: 6.5rem;
     display: flex;
     gap: 3rem;
     justify-content: space-between;
@@ -607,6 +600,9 @@
       top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    .hero-content {
+      padding-block-start: 0rem;
     }
 
     #services {
