@@ -52,7 +52,7 @@ const Header = () => {
                   <Link href="#about">About Us</Link>
                 </li>
                 <li>
-                  <Link href="#contact">Contact Us</Link>
+                  <Link href="#">Contact Us</Link>
                 </li>
                 <li>
                   <Link
