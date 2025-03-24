@@ -10,15 +10,26 @@ const Hero = () => {
 
   return (
     <>
-      <section id="home" className="section hero flow">
+      <section id="home" className="section  flow">
         <div className="wrapper flow">
-          <h1 className="hero-title">
-            ELITE TALENT
-            <div></div>
-            <span id="dynamic-text" ref={ref} />
-          </h1>
-          <div className="orange-border-bottom"></div>
-          <div className="flex-wrapper">
+          <div className="title-image-wrapper">
+            <div>
+              <h1 className="hero-title">
+                ELITE TALENT
+                <div></div>
+                <span id="dynamic-text" ref={ref} />
+              </h1>
+              <div className="orange-border-bottom"></div>
+            </div>
+            <Image
+              src="hero.svg"
+              alt=""
+              width={600}
+              height={600}
+              className="hero-image"
+            />
+          </div>
+          <div className="hero-content">
             <div className="hero-text flow">
               <p>
                 Unlock world-class talent and cutting-edge solutions to
@@ -31,7 +42,7 @@ const Hero = () => {
                 SERVICES
               </Link>
 
-              <Link href="#contact" className="button-lg">
+              <Link href="#" className="button-lg">
                 WORK WITH US
               </Link>
             </div>
