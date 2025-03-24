@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section id="services" className="section">
+    <section id="services" className="section service-background">
       <div className="wrapper flow">
         <h2>OUR SERVICES</h2>
         <div className="orange-border-bottom" data-width="small"></div>
@@ -65,6 +65,7 @@ const Services = () => {
         </div>
         <div className="orange-border-bottom" data-width="xlarge"></div>
       </div>
+      <div className="light-background"></div>
     </section>
   );
 };

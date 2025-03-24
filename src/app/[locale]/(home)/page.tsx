@@ -2,7 +2,8 @@ import Header from "./components/header";
 import Hero from "./components/hero-title";
 import Services from "./components/services";
 import About from "./components/about";
-import "./home.css";
+import Footer from "./components/footer";
+import ".home.css";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }];
@@ -14,11 +15,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <div className="page-wrapper">
-          <Services />
-        </div>
+        <Services />
         <About />
       </main>
+      <Footer />
     </>
   );
 }
