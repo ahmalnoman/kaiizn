@@ -3,7 +3,7 @@ import Hero from "./components/hero-title";
 import Services from "./components/services";
 import About from "./components/about";
 import Footer from "./components/footer";
-import ".home.css";
+import "./home.css";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }];
