@@ -78,7 +78,7 @@ const About = () => {
             Kaiizn is committed to delivering innovative and high-quality
             software solutions tailored to modern technological demands. Our
             services are designed to adapt to your business needs, ensuring you
-            stay ahead in a constantly evolving digital landscape
+            stay ahead in a constantly evolving digital landscape.
           </p>
           <Link href="#contact" className="button-regular" data-padding="small">
             CONTACT US

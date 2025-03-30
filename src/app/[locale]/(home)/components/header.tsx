@@ -13,9 +13,9 @@ const Header = () => {
 
   return (
     <>
-      <Link href="#home" className="skip-to-main">
+      {/* <Link href="#home" className="skip-to-main">
         Skip to main content
-      </Link>
+      </Link> */}
       <header className="site-header">
         <div className="wrapper">
           <div className="site-header__inner">
@@ -40,19 +40,20 @@ const Header = () => {
               className="primary-navigation"
               aria-label="Main navigation"
               id="primary-nav"
+              onClick={() => setIsExpanded(false)}
             >
               <ul role="list">
                 <li>
-                  <Link href="#home">Home</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="#services">Services</Link>
+                  <Link href="/#services">Services</Link>
                 </li>
                 <li>
-                  <Link href="#about">About Us</Link>
+                  <Link href="/#about">About Us</Link>
                 </li>
                 <li>
-                  <Link href="#">Contact Us</Link>
+                  <Link href="/contact#contact">Contact Us</Link>
                 </li>
                 <li>
                   <Link

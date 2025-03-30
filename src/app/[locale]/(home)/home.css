@@ -239,6 +239,10 @@
     background-size: cover;
   }
 
+  .test {
+    color: #ffffff;
+  }
+
   .site-header {
     padding-block-start: 1.75rem;
     padding-block-end: 0.75rem;
@@ -252,6 +256,10 @@
     gap: 0.5rem 2rem;
     justify-content: space-between;
     align-items: center;
+
+    button {
+      z-index: 30;
+    }
   }
 
   .logo {
@@ -273,7 +281,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem 2rem;
-      align-items: center;
     }
 
     li:not(:last-child) {
@@ -286,24 +293,27 @@
     }
 
     @media (width < 913px) {
-      display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
       position: absolute;
-      z-index: 10;
+      z-index: 20;
+      width: 100vw;
+      height: 100vh;
       top: 0;
       right: 0;
-      background: var(--background-gradient-sub);
-      font-size: var(--font-size-lg);
-      font-weight: 500;
+      background-color: rgba(89, 64, 255, 0.677);
+      backdrop-filter: blur(10px);
+      font-size: var(--font-size-heading-regular);
+      font-weight: 700;
       padding: 2rem;
-      border-radius: 0 0 0 0.357rem;
 
       ul {
         flex-direction: column;
-        align-items: start;
       }
 
       li:not(:last-child) {
-        width: 100%;
         padding-right: 0;
         border-right: none;
         padding-bottom: 1rem;
@@ -314,7 +324,7 @@
 
   @media (width < 913px) {
     [aria-expanded="true"] ~ .primary-navigation {
-      display: block;
+      opacity: 1;
     }
   }
 
@@ -332,7 +342,14 @@
     }
 
     @media (width < 900px) {
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      padding: 0.4rem 1.5rem;
+    }
+
+    @media (width < 490px) {
       font-size: var(--font-size-sm);
+      font-weight: 300;
       padding: 0.4rem 1.5rem;
     }
   }
@@ -399,7 +416,6 @@
 
   .title-image-wrapper {
     position: relative;
-    /* padding-block-end: 3rem; */
   }
 
   .hero-title {
@@ -451,11 +467,6 @@
     50% {
       opacity: 0;
     }
-  }
-
-  .page-wrapper {
-    /* background-image: url(/background.webp); */
-    background-size: cover;
   }
 
   #services {
@@ -578,6 +589,46 @@
       margin-bottom: 1rem;
     }
   }
+
+  #contact h1 {
+    font-size: var(--font-size-heading-regular);
+  }
+
+  .contact-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    padding-block-start: 4rem;
+    padding-block-end: 12rem;
+    padding-inline: 1rem;
+
+    input {
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: #cbc8c8 solid 1px;
+    }
+
+    textarea {
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: #cbc8c8 solid 1px;
+      margin-block-end: 2rem;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 @layer responsive {
@@ -585,6 +636,7 @@
     .title-image-wrapper {
       height: 500px;
       padding-block-end: 2rem;
+      margin-block-start: 3rem;
     }
 
     .hero-title {
@@ -611,6 +663,13 @@
         width: 320px;
         height: 320px;
         padding: 1rem 2rem;
+      }
+    }
+
+    #contact {
+      img {
+        width: 650px;
+        height: 650px;
       }
     }
   }
@@ -659,6 +718,13 @@
 
     .light-background {
       height: 200px;
+    }
+
+    #contact {
+      img {
+        width: 500px;
+        height: 500px;
+      }
     }
   }
 
@@ -710,17 +776,36 @@
         max-width: 300px;
       }
     }
+
+    #contact {
+      img {
+        width: 600px;
+        height: auto;
+        padding-block: 2rem;
+      }
+      button {
+        font-size: var(--font-size-regular);
+        width: 100%;
+      }
+    }
+
+    .contact-form {
+      padding-block-end: 4rem;
+    }
+
+    .contact-container {
+      flex-direction: column;
+    }
   }
 
   @media (width < 490px) {
     .primary-navigation {
-      font-size: var(--font-size-sm);
-      font-weight: 300;
+      font-size: var(--font-size-regular);
+      font-weight: 500;
       padding: 2rem;
 
       li:not(:last-child) {
-        padding-bottom: 0.5rem;
-        border-bottom: var(--clr-gray-100) 1px solid;
+        padding-bottom: 1rem;
       }
     }
 
@@ -788,6 +873,12 @@
         width: 120px;
       }
       font-size: 0.75rem;
+    }
+
+    #contact {
+      h1 {
+        font-size: var(--font-size-heading-sm);
+      }
     }
   }
 }
