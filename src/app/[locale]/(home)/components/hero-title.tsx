@@ -43,7 +43,7 @@ const Hero = () => {
               </Link>
 
               <Link href="/contact" className="button-lg">
-                WORK WITH US
+                CONNECT WITH US
               </Link>
             </div>
           </div>
