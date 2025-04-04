@@ -19,8 +19,14 @@ const About = () => {
                 enhance scalability, and drive measurable success with
                 cutting-edge technology.
               </p>
-              <p>Web3 & AI-Powered Innovations</p>
-              <p>End-to-End Web2 Development & DevOps</p>
+              <div className="flex-content_inner">
+                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <p>Web3 & AI-Powered Innovations</p>
+              </div>
+              <div className="flex-content_inner">
+                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <p>End-to-End Web2 Development & DevOps</p>
+              </div>
             </div>
             <Image
               src="./seamless.svg"
@@ -46,8 +52,14 @@ const About = () => {
                 growth. Our data-driven approach optimizes investments for
                 long-term success.
               </p>
-              <p>Performance-Driven Strategic Planning</p>
-              <p>Agile Scalability & Adaptive Flexibility</p>
+              <div className="flex-content_inner">
+                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <p>Performance-Driven Strategic Planning</p>
+              </div>
+              <div className="flex-content_inner">
+                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <p>Agile Scalability & Adaptive Flexibility</p>
+              </div>
             </div>
           </div>
           <div className="about-flex__inner">
@@ -59,8 +71,14 @@ const About = () => {
                 solutions are engineered for agility, efficiency, and long-term
                 success.
               </p>
-              <p>Data-Driven Performance Optimization</p>
-              <p>Scalable, Future-Proof Architecture</p>
+              <div className="flex-content_inner">
+                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <p>Data-Driven Performance Optimization</p>
+              </div>
+              <div className="flex-content_inner">
+                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <p>Scalable, Future-Proof Architecture</p>
+              </div>
             </div>
             <Image
               src="./customized.svg"

@@ -34,7 +34,11 @@ const Header = () => {
               onClick={toggleMenu}
             >
               <span className="visually-hidden">Menu</span>
-              <Image src="/hamburger.svg" alt="" height={40} width={40} />
+              {isExpanded ? (
+                <Image src="/close.svg" alt="" height={30} width={30} />
+              ) : (
+                <Image src="/hamburger.svg" alt="" height={40} width={40} />
+              )}
             </button>
             <nav
               className="primary-navigation"
