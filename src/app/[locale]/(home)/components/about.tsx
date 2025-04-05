@@ -18,16 +18,16 @@ const About = () => {
               <h3>{t("seamless-tech-solutions")}</h3>
               <p>{t("seamless-tech-solutions-desc")}</p>
               <div className="flex-content_inner">
-                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <Image src="/arrow.svg" alt="" height={20} width={20} />
                 <p>{t("web3-ai-powered")}</p>
               </div>
               <div className="flex-content_inner">
-                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <Image src="/arrow.svg" alt="" height={20} width={20} />
                 <p>{t("e2e-web2-dev")}</p>
               </div>
             </div>
             <Image
-              src="./seamless.svg"
+              src="/seamless.svg"
               alt=""
               height={420}
               width={400}
@@ -36,7 +36,7 @@ const About = () => {
           </div>
           <div className="about-flex__inner special">
             <Image
-              src="./intelligent.svg"
+              src="/intelligent.svg"
               alt=""
               height={420}
               width={400}
@@ -46,11 +46,11 @@ const About = () => {
               <h3>{t("resource-optimization")}</h3>
               <p>{t("resource-optimization-desc")}</p>
               <div className="flex-content_inner">
-                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <Image src="/arrow.svg" alt="" height={20} width={20} />
                 <p>{t("performance-driven-planning")}</p>
               </div>
               <div className="flex-content_inner">
-                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <Image src="/arrow.svg" alt="" height={20} width={20} />
                 <p>{t("agile-scalability")}</p>
               </div>
             </div>
@@ -60,16 +60,16 @@ const About = () => {
               <h3>{t("custom-tech-solutions")}</h3>
               <p>{t("custom-tech-solutions-desc")}</p>
               <div className="flex-content_inner">
-                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <Image src="/arrow.svg" alt="" height={20} width={20} />
                 <p>{t("data-driven-optimization")}</p>
               </div>
               <div className="flex-content_inner">
-                <Image src="./arrow.svg" alt="" height={20} width={20} />
+                <Image src="/arrow.svg" alt="" height={20} width={20} />
                 <p>{t("scalable-architecture")}</p>
               </div>
             </div>
             <Image
-              src="./customized.svg"
+              src="/customized.svg"
               alt=""
               height={420}
               width={400}
