@@ -32,7 +32,7 @@ const Header = () => {
           <div className="site-header__inner">
             <Link href="/">
               <Image
-                src="/company-logo.svg"
+                src="/kaiizn/company-logo.svg"
                 alt=""
                 className="logo"
                 width={80}
@@ -46,9 +46,14 @@ const Header = () => {
             >
               <span className="visually-hidden">{t("menu")}</span>
               {isExpanded ? (
-                <Image src="/close.svg" alt="" height={30} width={30} />
+                <Image src="/kaiizn/close.svg" alt="" height={30} width={30} />
               ) : (
-                <Image src="/hamburger.svg" alt="" height={40} width={40} />
+                <Image
+                  src="/kaiizn/hamburger.svg"
+                  alt=""
+                  height={40}
+                  width={40}
+                />
               )}
             </button>
             <nav
