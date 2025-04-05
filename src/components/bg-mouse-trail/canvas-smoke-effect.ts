@@ -1,8 +1,8 @@
 //@ts-nocheck
 
 export function setupCanvasSmokeEffect(canvas) {
-  canvas.width = canvas.clientWidth;
-  canvas.height = canvas.clientHeight;
+  // canvas.width = canvas.clientWidth;
+  // canvas.height = canvas.clientHeight;
 
   const config = {
     TEXTURE_DOWNSAMPLE: 1,
@@ -560,17 +560,13 @@ export function setupCanvasSmokeEffect(canvas) {
 
         pointers[i].id = touches[i].identifier;
         pointers[i].down = true;
+        pointers[i].moved = pointers[i].down;
+        pointers[i].color = colorArr;
+        pointers[i].moved = pointers[i].down;
+        pointers[i].dx = (touches[i].clientX - pointers[i].x) * 10.0;
+        pointers[i].dy = (touches[i].clientY - pointers[i].y) * 10.0;
         pointers[i].x = touches[i].clientX;
         pointers[i].y = touches[i].clientY;
-        pointers[i].color = colorArr;
-
-        const pointer = pointers[i];
-
-        pointer.moved = pointer.down;
-        pointer.dx = (touches[i].clientX - pointer.x) * 10.0;
-        pointer.dy = (touches[i].clientY - pointer.y) * 10.0;
-        pointer.x = touches[i].clientX;
-        pointer.y = touches[i].clientY;
       }
     },
     false,

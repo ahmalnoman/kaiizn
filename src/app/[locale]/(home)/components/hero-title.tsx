@@ -4,9 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import useTypewriting from "@/hooks/useTypewriting";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
-  const { ref } = useTypewriting(["SERVICES_", "SOLUTIONS_"]);
+  const t = useTranslations("HomePage");
+
+  const { ref } = useTypewriting([
+    `${t("services").toUpperCase()}_`,
+    `${t("solutions").toUpperCase()}_`,
+  ]);
 
   return (
     <>
@@ -15,8 +21,7 @@ const Hero = () => {
           <div className="title-image-wrapper">
             <div>
               <h1 className="hero-title">
-                ELITE TALENT
-                <div></div>
+                <div>{t("elite-talent")}</div>
                 <span id="dynamic-text" ref={ref} />
               </h1>
               <div className="orange-border-bottom"></div>
@@ -31,19 +36,15 @@ const Hero = () => {
           </div>
           <div className="hero-content">
             <div className="hero-text flow">
-              <p>
-                Unlock world-class talent and cutting-edge solutions to
-                accelerate your business growth and turn bold visions into
-                reality
-              </p>
+              <p>{t("unlock-world")}</p>
             </div>
             <div className="flex-wrapper">
               <Link href="#services" className="button-lg" data-color="purple">
-                SERVICES
+                {t("services")}
               </Link>
 
               <Link href="/contact" className="button-lg">
-                CONNECT
+                {t("connect")}
               </Link>
             </div>
           </div>

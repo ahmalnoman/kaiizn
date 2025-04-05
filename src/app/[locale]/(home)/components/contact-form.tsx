@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import { useState, FormEvent } from "react";
@@ -13,6 +14,8 @@ interface FormData {
 }
 
 const ContactForm = () => {
+  const t = useTranslations("ContactPage");
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -79,11 +82,11 @@ const ContactForm = () => {
       className="section about-background"
     >
       <div className="wrapper flow">
-        <h1>Contact Us</h1>
+        <h1>{t("contact-us")}</h1>
         <div className="contact-container">
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">{t("name")}</label>
               <input
                 className="form-input"
                 type="text"
@@ -95,7 +98,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t("email")}</label>
               <input
                 className="form-input"
                 type="email"
@@ -107,7 +110,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="country">Country,City</label>
+              <label htmlFor="country">{t("country")}</label>
               <input
                 className="form-input"
                 type="text"
@@ -119,7 +122,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">Phone Number</label>
+              <label htmlFor="phone">{t("phone-number")}</label>
               <input
                 className="form-input"
                 type="text"
@@ -131,7 +134,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Tell us more</label>
+              <label htmlFor="message">{t("tell-us-more")}</label>
               <textarea
                 name="message"
                 id="message"
@@ -142,7 +145,7 @@ const ContactForm = () => {
               ></textarea>
             </div>
             <button type="submit" className="button-lg" data-color="purple">
-              Send
+              {t("send")}
             </button>
             {status && <p>{status}</p>}
           </form>
@@ -156,13 +159,8 @@ const ContactForm = () => {
         </div>
         <div className="orange-border-bottom" data-width="xlarge"></div>
         <div className="about-contact">
-          <h2>Our Comprehensive Offerings</h2>
-          <p>
-            Kaiizn is committed to delivering innovative and high-quality
-            software solutions tailored to modern technological demands. Our
-            services are designed to adapt to your business needs, ensuring you
-            stay ahead in a constantly evolving digital landscape.
-          </p>
+          <h2>{t("our-comprehensive-offerings")}</h2>
+          <p>{t("our-comprehensive-offerings-desc")}</p>
         </div>
       </div>
     </section>

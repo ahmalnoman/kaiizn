@@ -1,5 +1,5 @@
 {
-  "homepage": "ahmalnoman.github.io." ,
+  "homepage": "ahmalnoman.github.io.",
   "name": "kaizn",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@heroicons/react": "^2.2.0",
+    "flag-icons": "^7.3.2",
     "next": "15.2.2",
+    "next-intl": "^4.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

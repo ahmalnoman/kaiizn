@@ -1,31 +1,29 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
+  const t = useTranslations("HomePage");
+
   return (
     <section id="about" className="about-background">
       <div className="wrapper flow">
-        <h2>Why Choose KAIIZN ?</h2>
+        <h2>{t("why-choose-kaizn")}</h2>
         <div className="orange-border-bottom" data-width="medium"></div>
         <div className="about-flex">
           <div className="about-flex__inner">
             <div className="about-flex-content">
-              <h3>Seamless Tech Solutions</h3>
-              <p>
-                Specialized in Web3 & AI innovations, full-stack Web2
-                development, and DevOps solutions. We simplify complexity,
-                enhance scalability, and drive measurable success with
-                cutting-edge technology.
-              </p>
+              <h3>{t("seamless-tech-solutions")}</h3>
+              <p>{t("seamless-tech-solutions-desc")}</p>
               <div className="flex-content_inner">
                 <Image src="./arrow.svg" alt="" height={20} width={20} />
-                <p>Web3 & AI-Powered Innovations</p>
+                <p>{t("web3-ai-powered")}</p>
               </div>
               <div className="flex-content_inner">
                 <Image src="./arrow.svg" alt="" height={20} width={20} />
-                <p>End-to-End Web2 Development & DevOps</p>
+                <p>{t("e2e-web2-dev")}</p>
               </div>
             </div>
             <Image
@@ -45,39 +43,29 @@ const About = () => {
               className="floating-image"
             />
             <div className="about-flex-content">
-              <h3>Intelligent Resource Optimization</h3>
-              <p>
-                Empowering businesses with strategic resource management,
-                ensuring maximum efficiency, scalability, and sustainable
-                growth. Our data-driven approach optimizes investments for
-                long-term success.
-              </p>
+              <h3>{t("resource-optimization")}</h3>
+              <p>{t("resource-optimization-desc")}</p>
               <div className="flex-content_inner">
                 <Image src="./arrow.svg" alt="" height={20} width={20} />
-                <p>Performance-Driven Strategic Planning</p>
+                <p>{t("performance-driven-planning")}</p>
               </div>
               <div className="flex-content_inner">
                 <Image src="./arrow.svg" alt="" height={20} width={20} />
-                <p>Agile Scalability & Adaptive Flexibility</p>
+                <p>{t("agile-scalability")}</p>
               </div>
             </div>
           </div>
           <div className="about-flex__inner">
             <div className="about-flex-content">
-              <h3>Customized Tech Solutions</h3>
-              <p>
-                Building sleek, user-centric interfaces, scalable backends, and
-                seamless deployments, all powered by expert DevOps. Our
-                solutions are engineered for agility, efficiency, and long-term
-                success.
-              </p>
+              <h3>{t("custom-tech-solutions")}</h3>
+              <p>{t("custom-tech-solutions-desc")}</p>
               <div className="flex-content_inner">
                 <Image src="./arrow.svg" alt="" height={20} width={20} />
-                <p>Data-Driven Performance Optimization</p>
+                <p>{t("data-driven-optimization")}</p>
               </div>
               <div className="flex-content_inner">
                 <Image src="./arrow.svg" alt="" height={20} width={20} />
-                <p>Scalable, Future-Proof Architecture</p>
+                <p>{t("scalable-architecture")}</p>
               </div>
             </div>
             <Image
@@ -91,15 +79,10 @@ const About = () => {
         </div>
         <div className="orange-border-bottom" data-width="xlarge"></div>
         <div className="about-contact">
-          <h2>Our Comprehensive Offerings</h2>
-          <p>
-            Kaiizn is committed to delivering innovative and high-quality
-            software solutions tailored to modern technological demands. Our
-            services are designed to adapt to your business needs, ensuring you
-            stay ahead in a constantly evolving digital landscape.
-          </p>
+          <h2>{t("our-company-offerings")}</h2>
+          <p>{t("our-company-offerings-desc")}</p>
           <Link href="/contact" className="button-regular" data-padding="small">
-            CONTACT US
+            {t("contact-us")}
           </Link>
         </div>
       </div>

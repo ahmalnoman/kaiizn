@@ -1,10 +1,21 @@
 "use client";
 
+import LanguagePicker from "@/components/language-picker";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { i18nLocales, routing } from "@/i18n/routing";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
+  const t = useTranslations("HomePage");
+  const i18nT = useTranslations("I18n");
+
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = useLocale();
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleMenu = () => {
@@ -33,7 +44,7 @@ const Header = () => {
               aria-expanded={isExpanded}
               onClick={toggleMenu}
             >
-              <span className="visually-hidden">Menu</span>
+              <span className="visually-hidden">{t("menu")}</span>
               {isExpanded ? (
                 <Image src="/close.svg" alt="" height={30} width={30} />
               ) : (
@@ -48,16 +59,16 @@ const Header = () => {
             >
               <ul role="list">
                 <li>
-                  <Link href="/">Home</Link>
+                  <Link href="/">{t("home")}</Link>
                 </li>
                 <li>
-                  <Link href="/#services">Services</Link>
+                  <Link href="/#services">{t("services")}</Link>
                 </li>
                 <li>
-                  <Link href="/#about">About Us</Link>
+                  <Link href="/#about">{t("about-us")}</Link>
                 </li>
                 <li>
-                  <Link href="/contact#contact">Contact Us</Link>
+                  <Link href="/contact#contact">{t("contact-us")}</Link>
                 </li>
                 <li>
                   <Link
@@ -66,8 +77,18 @@ const Header = () => {
                     target="_blank"
                   >
                     {" "}
-                    Book a meeting{" "}
+                    {t("book-a-meeting")}{" "}
                   </Link>
+                </li>
+                <li>
+                  <LanguagePicker
+                    languages={i18nLocales.map((locale) => ({
+                      ...locale,
+                      label: i18nT(locale.label as any),
+                    }))}
+                    lang={locale}
+                    onChange={(locale) => router.replace(pathname, { locale })}
+                  />
                 </li>
               </ul>
             </nav>
