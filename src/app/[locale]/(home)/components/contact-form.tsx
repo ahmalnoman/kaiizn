@@ -150,7 +150,7 @@ const ContactForm = () => {
             {status && <p>{status}</p>}
           </form>
           <Image
-            src="./contact.svg"
+            src="/contact.svg"
             alt=""
             height={750}
             width={750}
