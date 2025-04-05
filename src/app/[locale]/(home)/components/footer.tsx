@@ -8,7 +8,7 @@ const Footer = () => {
     <section id="footer" className="footer-background">
       <div className="wrapper flow">
         <Image
-          src="/kaiizn/company-logo.svg"
+          src="/company-logo.svg"
           alt=""
           className="logo"
           width={80}

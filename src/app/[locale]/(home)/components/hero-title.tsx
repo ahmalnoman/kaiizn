@@ -27,7 +27,7 @@ const Hero = () => {
               <div className="orange-border-bottom"></div>
             </div>
             <Image
-              src="/kaiizn/hero.svg"
+              src="hero.svg"
               alt=""
               width={600}
               height={600}
