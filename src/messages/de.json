@@ -4,6 +4,10 @@
     "Arabic": "Arabisch",
     "German": "Deutsch"
   },
+  "Common": {
+    "essential-cookies-accept": "Wir verwenden <important>Essenzielle Cookies: Sitzungs- oder Lastverteilungscookies, die das ordnungsgemäße Funktionieren der Website ermöglichen</important>. Diese verfolgen kein individuelles Verhalten und speichern keine personenbezogenen Daten.",
+    "agree": "Zustimmen"
+  },
   "HomePage": {
     "menu": "Menü",
     "home": "Startseite",
