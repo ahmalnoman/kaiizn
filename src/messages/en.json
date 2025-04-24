@@ -62,11 +62,13 @@
   "PrivacyPage": {
     "privacy-header": "PRIVACY NOTICE",
     "privacy-introduction": "Introduction",
-    "privacy-introduction-desc": "This policy outlines the areas of user privacy concern and details the obligations of users, the website, and its owners. It explains how kaiizn.com processes, stores, and protects user data in compliance with the General Data Protection Regulation (GDPR) and other applicable laws.",
+    "privacy-introduction-desc": "This policy outlines the areas of user-privacy concern and details the obligations of users, the website, and its owners. It explains how kaiizn.com processes, stores, and protects user data in compliance with the General Data Protection Regulation (GDPR), the EU ePrivacy Directive, and other applicable laws.",
     "privacy-website": "Website",
     "privacy-website-desc": "Kaiizn and its owners take a proactive approach to user privacy, ensuring all necessary steps are taken to safeguard user information during their interaction with the website. We comply fully with GDPR requirements and prioritize transparency in our data practices.",
     "privacy-data": "Data Controller",
-    "privacy-data-desc-1": "The data controller is the entity responsible for determining the purposes and means of processing personal data, including ensuring its security. For kaiizn.com, the data controller is:Kaiizn LLC (Commercial Registration No.: 255834) 3 Makram Ebeid, Al Mintaqah as Sādisah, Nasr City, Cairo Governorate, Egypt Tax Identification Number: 770627293.",
-    "privacy-data-desc-2": "For clarifications or to exercise your data rights, contact us at: Email: info@kaiizn.com"
+    "privacy-data-desc-1": "The data controller is the entity responsible for determining the purposes and means of processing personal data, including ensuring its security. ",
+    "privacy-data-desc-2": "Kaiizn LLC (Commercial Registration No. 255834)",
+    "privacy-data-desc-3": "Tax Identification Number: 770627293",
+    "privacy-data-desc-4": "For clarifications or to exercise your data rights, contact us at info@kaiizn.com."
   }
 }

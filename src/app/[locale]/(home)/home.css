@@ -561,8 +561,13 @@
 
   .flex-content_inner {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 0.5rem;
+    justify-content: center;
+
+    &[data-link="calendly"] {
+      align-items: center;
+    }
   }
 
   .floating-image {
@@ -605,8 +610,10 @@
   }
 
   .footer-content {
+    max-width: 60rem;
+    margin-block: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
   }

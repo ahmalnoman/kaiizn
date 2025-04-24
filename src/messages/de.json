@@ -60,13 +60,15 @@
     "our-comprehensive-offerings-desc": "Kaiizn verpflichtet sich, innovative und hochwertige Softwarelösungen zu liefern, die auf moderne technologische Anforderungen zugeschnitten sind. Unsere Dienstleistungen sind darauf ausgelegt, sich an die Bedürfnisse Ihres Unternehmens anzupassen und sicherzustellen, dass Sie in einer sich ständig weiterentwickelnden digitalen Landschaft immer einen Schritt voraus sind."
   },
   "PrivacyPage": {
-    "privacy-header": "DATENSCHUTZERKLÄRUNG",
-    "privacy-introduction": "Einführung",
-    "privacy-introduction-desc": "Diese Richtlinie beschreibt die Bereiche, in denen der Datenschutz der Nutzer wichtig ist, und erläutert die Pflichten der Nutzer, der Website und ihrer Eigentümer. Sie erläutert, wie kaiizn.com Nutzerdaten gemäß der Datenschutz-Grundverordnung (DSGVO) und anderen geltenden Gesetzen verarbeitet, speichert und schützt.",
-    "privacy-website": "Webseite",
-    "privacy-website-desc": "Kaiizn und seine Eigentümer verfolgen einen proaktiven Ansatz zum Schutz der Nutzerdaten und stellen sicher, dass alle notwendigen Schritte zum Schutz der Nutzerdaten während der Interaktion mit der Website unternommen werden. Wir erfüllen die DSGVO-Anforderungen vollständig und legen Wert auf Transparenz in unserem Umgang mit Daten.",
-    "privacy-data": "Datenverantwortlicher",
-    "privacy-data-desc-1": "Der Verantwortliche ist die Stelle, die für die Festlegung der Zwecke und Mittel der Verarbeitung personenbezogener Daten sowie für deren Sicherheit verantwortlich ist. Für kaiizn.com ist der Verantwortliche: Kaiizn LLC (Handelsregisternummer: 255834), 3 Makram Ebeid, Al Mintaqah as Sādisah, Nasr City, Gouvernement Kairo, Ägypten, Steuernummer: 770627293.",
-    "privacy-data-desc-2": "Für weitere Informationen oder zur Ausübung Ihrer Datenschutzrechte kontaktieren Sie uns bitte unter: E-Mail: info@kaiizn.com"
+    "privacy-header": "Datenschutzrichtlinie",
+    "privacy-introduction": "Einleitung",
+    "privacy-introduction-desc": "Diese Richtlinie beschreibt alle datenschutzrelevanten Aspekte, die Pflichten der Nutzer sowie die Verantwortlichkeiten der Website und ihrer Eigentümer. Sie erläutert, wie kaiizn.com personenbezogene Daten im Einklang mit der Datenschutz-Grundverordnung (DSGVO), der EU-EPrivacy-Richtlinie und anderen einschlägigen Gesetzen verarbeitet, speichert und schützt.",
+    "privacy-website": "Die Website",
+    "privacy-website-desc": "Kaiizn und seine Eigentümer verfolgen einen proaktiven Datenschutzansatz und ergreifen sämtliche notwendigen Maßnahmen, um Nutzerinformationen während der Interaktion mit der Website zu schützen. Wir erfüllen die DSGVO vollständig und legen größten Wert auf Transparenz in unseren Datenverarbeitungsprozessen.",
+    "privacy-data": "Verantwortliche Stelle",
+    "privacy-data-desc-1": "Kaiizn LLC (Handelsregister-Nr. 255834) ",
+    "privacy-data-desc-2": "3 Makram Ebeid, Al Mintaqah as Sādisah, Nasr City, Gouvernement Kairo, Ägypten ",
+    "privacy-data-desc-3": "Steuer-Identifikationsnummer: 770627293",
+    "privacy-data-desc-4": "Für Auskünfte oder zur Ausübung Ihrer Betroffenenrechte: info@kaiizn.com"
   }
 }

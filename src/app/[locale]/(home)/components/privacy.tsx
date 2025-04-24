@@ -21,6 +21,8 @@ const PrivacyNotice = () => {
             <h2 className="sec-title">{t("privacy-data")}</h2>
             <p>{t("privacy-data-desc-1")}</p>
             <p>{t("privacy-data-desc-2")}</p>
+            <p>{t("privacy-data-desc-3")}</p>
+            <p>{t("privacy-data-desc-4")}</p>
           </div>
         </div>
       </section>
