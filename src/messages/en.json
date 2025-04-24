@@ -4,6 +4,10 @@
     "Arabic": "Arabic",
     "German": "German"
   },
+  "Common": {
+    "essential-cookies-accept": "We use <important>Essential Cookies: Session or load-balancing cookies that enable the site to function properly</important>. These do not track individual behavior or store personally identifiable information.",
+    "agree": "Agree"
+  },
   "HomePage": {
     "menu": "Menu",
     "home": "Home",

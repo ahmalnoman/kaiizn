@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import CookieBanner from "@/components/cookie-banner";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const michroma = Michroma({
@@ -45,6 +46,7 @@ export default async function LocaleRootLayout({
     <html lang="en" dir={isRtl ? "rtl" : "ltr"}>
       <NextIntlClientProvider>
         <body className={`${inter.variable} ${michroma.variable} antialiased`}>
+          <CookieBanner />
           <BgMouseTrail />
           <div className="min-h-screen bg-black/25 w-full overflow-hidden">
             {children}
