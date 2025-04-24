@@ -54,5 +54,15 @@
     "send": "Senden",
     "our-comprehensive-offerings": "Unsere umfassenden Angebote",
     "our-comprehensive-offerings-desc": "Kaiizn verpflichtet sich, innovative und hochwertige Softwarelösungen zu liefern, die auf moderne technologische Anforderungen zugeschnitten sind. Unsere Dienstleistungen sind darauf ausgelegt, sich an die Bedürfnisse Ihres Unternehmens anzupassen und sicherzustellen, dass Sie in einer sich ständig weiterentwickelnden digitalen Landschaft immer einen Schritt voraus sind."
+  },
+  "PrivacyPage": {
+    "privacy-header": "DATENSCHUTZERKLÄRUNG",
+    "privacy-introduction": "Einführung",
+    "privacy-introduction-desc": "Diese Richtlinie beschreibt die Bereiche, in denen der Datenschutz der Nutzer wichtig ist, und erläutert die Pflichten der Nutzer, der Website und ihrer Eigentümer. Sie erläutert, wie kaiizn.com Nutzerdaten gemäß der Datenschutz-Grundverordnung (DSGVO) und anderen geltenden Gesetzen verarbeitet, speichert und schützt.",
+    "privacy-website": "Webseite",
+    "privacy-website-desc": "Kaiizn und seine Eigentümer verfolgen einen proaktiven Ansatz zum Schutz der Nutzerdaten und stellen sicher, dass alle notwendigen Schritte zum Schutz der Nutzerdaten während der Interaktion mit der Website unternommen werden. Wir erfüllen die DSGVO-Anforderungen vollständig und legen Wert auf Transparenz in unserem Umgang mit Daten.",
+    "privacy-data": "Datenverantwortlicher",
+    "privacy-data-desc-1": "Der Verantwortliche ist die Stelle, die für die Festlegung der Zwecke und Mittel der Verarbeitung personenbezogener Daten sowie für deren Sicherheit verantwortlich ist. Für kaiizn.com ist der Verantwortliche: Kaiizn LLC (Handelsregisternummer: 255834), 3 Makram Ebeid, Al Mintaqah as Sādisah, Nasr City, Gouvernement Kairo, Ägypten, Steuernummer: 770627293.",
+    "privacy-data-desc-2": "Für weitere Informationen oder zur Ausübung Ihrer Datenschutzrechte kontaktieren Sie uns bitte unter: E-Mail: info@kaiizn.com"
   }
 }

@@ -16,11 +16,12 @@ const Footer = () => {
         />
         <div className="footer-content">
           <p>KAIIZN© 2023-2025. All Rights Reserved.</p>
-          <p>info@kaiizn.com</p>
+          <Link href="/privacy">PRIVACY NOTICE</Link>
           <p>career@kaiizn.com</p>
           <Link href="https://calendly.com/kaiizn" target="_blank">
             FOUNDER 1-O-1
           </Link>
+          <p>info@kaiizn.com</p>
         </div>
       </div>
     </section>

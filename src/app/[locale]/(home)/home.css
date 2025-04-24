@@ -513,6 +513,7 @@
     font-size: var(--font-size-lg);
     font-weight: 700;
     text-align: center;
+    overflow-wrap: break-all;
   }
 
   .service-card__text {
@@ -596,11 +597,18 @@
   #footer {
     padding-block: 1rem;
     font-family: var(--ff-heading-main);
+    /* max-height: 200px; */
 
     p {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-block: 0.5rem;
     }
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
   }
 
   #contact h1 {
@@ -640,6 +648,43 @@
       display: grid;
       gap: 1rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  /* .privacy-background {
+    background-image: url(/privacy-background.svg);
+    background-size: cover;
+  } */
+
+  #privacy {
+    .title {
+      font-weight: 700;
+      color: var(--text-high-contrast);
+      font-size: var(--font-size-heading-lg);
+    }
+
+    .sec-title {
+      font-weight: 700;
+      color: var(--text-high-contrast);
+      font-size: var(--font-size-heading-sm);
+      margin-block-end: 2rem;
+    }
+
+    p {
+      font-size: var(--font-size-md);
+      margin-block-end: 1rem;
+      color: var(--text-high-contrast);
+    }
+
+    .wrapper {
+      padding-block: 8rem;
+    }
+    .orange-border-bottom {
+      margin-block: 2rem;
+      margin-inline: 0;
+    }
+    .spacing {
+      margin-block: 4rem;
     }
   }
 }
@@ -683,6 +728,12 @@
       img {
         width: 650px;
         height: 650px;
+      }
+    }
+
+    #privacy {
+      .title {
+        text-align: center;
       }
     }
   }
@@ -851,7 +902,7 @@
         gap: 1rem;
       }
       .service-card {
-        width: 240px;
+        width: 275px;
         height: auto;
       }
     }
@@ -898,6 +949,18 @@
     #contact {
       h1 {
         font-size: var(--font-size-heading-sm);
+      }
+    }
+
+    #privacy {
+      .title {
+        font-size: var(--font-size-heading-regular);
+      }
+      .sec-title {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: var(--font-size-sm);
       }
     }
   }
