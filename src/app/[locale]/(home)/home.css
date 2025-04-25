@@ -616,6 +616,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
+    align-items: start;
   }
 
   #contact h1 {
@@ -694,6 +695,37 @@
       margin-block: 4rem;
     }
   }
+  #imprint {
+    .title {
+      font-weight: 700;
+      color: var(--text-high-contrast);
+      font-size: var(--font-size-heading-lg);
+    }
+
+    .sec-title {
+      font-weight: 700;
+      color: var(--text-high-contrast);
+      font-size: var(--font-size-heading-sm);
+      margin-block-end: 2rem;
+    }
+
+    p {
+      font-size: var(--font-size-md);
+      margin-block-end: 1rem;
+      color: var(--text-high-contrast);
+    }
+
+    .wrapper {
+      padding-block: 8rem;
+    }
+    .orange-border-bottom {
+      margin-block: 2rem;
+      margin-inline: 0;
+    }
+    .spacing {
+      margin-block: 4rem;
+    }
+  }
 }
 
 @layer responsive {
@@ -739,6 +771,12 @@
     }
 
     #privacy {
+      .title {
+        text-align: center;
+      }
+    }
+
+    #imprint {
       .title {
         text-align: center;
       }
@@ -867,6 +905,15 @@
     .contact-container {
       flex-direction: column;
     }
+
+    #footer {
+      p {
+        font-size: 0.75rem;
+      }
+      a {
+        font-size: 0.75rem;
+      }
+    }
   }
 
   @media (width < 490px) {
@@ -947,10 +994,25 @@
     }
 
     #footer {
+      p {
+        font-size: 0.63rem;
+      }
+      a {
+        font-size: 0.63rem;
+      }
       img {
         width: 120px;
       }
-      font-size: 0.75rem;
+      .flex-content_inner {
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .footer-content {
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+      }
     }
 
     #contact {
@@ -960,6 +1022,18 @@
     }
 
     #privacy {
+      .title {
+        font-size: var(--font-size-heading-regular);
+      }
+      .sec-title {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: var(--font-size-sm);
+      }
+    }
+
+    #imprint {
       .title {
         font-size: var(--font-size-heading-regular);
       }

@@ -46,7 +46,13 @@
     "elite-talent": "ELITE TALENT",
     "unlock-world": "Unlock world-class talent and cutting-edge solutions to accelerate your business growth and turn bold visions into reality",
     "connect": "Connect",
-    "solutions": "Solutions"
+    "solutions": "Solutions",
+    "footer-rights": "KAIIZN© 2023-2025. All Rights Reserved.",
+    "footer-privacy-cookies": "Privacy & Cookies Policy",
+    "footer-imprint": "Imprint",
+    "footer-telegram": "Telegram",
+    "footer-linkedin": "LinkedIn",
+    "footer-founder": "Founder 1-0-1"
   },
   "ContactPage": {
     "contact-us": "Contact Us",
@@ -70,5 +76,34 @@
     "privacy-data-desc-2": "Kaiizn LLC (Commercial Registration No. 255834)",
     "privacy-data-desc-3": "Tax Identification Number: 770627293",
     "privacy-data-desc-4": "For clarifications or to exercise your data rights, contact us at info@kaiizn.com."
+  },
+  "ImprintPage": {
+    "imprint-header": "Imprint / Legal Notice",
+    "imprint-business-name": "Business Name: ",
+    "imprint-business-name-value": "Kaiizn LLC",
+    "imprint-commercial-registration": "Commercial Registration: ",
+    "imprint-commercial-registration-value": "255834",
+    "imprint-tax": "Tax Identification Number: ",
+    "imprint-tax-value": "770627293",
+    "imprint-address": "Registered Office: ",
+    "imprint-address-value": "3 Makram Ebeid, Al Mintaqah as Sādisah, Nasr City, Cairo Governorate, Egypt",
+    "imprint-contact": "Contact: ",
+    "imprint-contact-value-1": "General Inquiries: info@kaiizn.com",
+    "imprint-contact-value-2": "Privacy Requests: info@kaiizn.com",
+    "imprint-content": "Responsible for Content: ",
+    "imprint-content-value-1": "Sarah Sulaiman Hussein",
+    "imprint-content-value-2": "Managing Director, Kaiizn LLC",
+    "legal-header": "Legal Disclosures",
+    "legal-business": "1. Business Information",
+    "legal-business-value-1": "Legal Entity: Limited Liability Company (LLC)",
+    "legal-business-value-2": "Tax Identification: 770627293 (Egyptian Tax Authority)",
+    "legal-liability": "2. Liability Disclaimer",
+    "legal-liability-value-1": "Content Accuracy: While we strive to ensure the accuracy of information on this website, we do not guarantee completeness, timeliness, or reliability. ",
+    "legal-liability-value-2": "External Links: We are not responsible for the content, privacy practices, or security of third-party websites linked on kaiizn.com.",
+    "legal-intellectual": "3. Intellectual Property",
+    "legal-intellectual-value": "All text, images, logos, and trademarks on this website are the property of Kaiizn LLC unless otherwise stated. Unauthorized reproduction or use is prohibited.",
+    "legal-regulatory": "4. Regulatory Compliance",
+    "legal-regulatory-value": "This website operates under the laws of the Arab Republic of Egypt.",
+    "last-update": "Last Updated: February 21, 2025"
   }
 }

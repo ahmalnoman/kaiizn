@@ -46,7 +46,13 @@
     "elite-talent": "ELITE-TALENTE",
     "unlock-world": "Entfesseln Sie Weltklasse-Talente und hochmoderne Lösungen, um das Wachstum Ihres Unternehmens zu beschleunigen und gewagte Visionen in die Realität umzusetzen",
     "connect": "Kontakt",
-    "solutions": "Lösungen"
+    "solutions": "Lösungen",
+    "footer-rights": "KAIIZN© 2023-2025. Alle Rechte vorbehalten.",
+    "footer-privacy-cookies": "Datenschutz- und Cookie-Richtlinie",
+    "footer-imprint": "Impressum",
+    "footer-telegram": "Telegram",
+    "footer-linkedin": "LinkedIn",
+    "footer-founder": "Gründer 1-0-1"
   },
   "ContactPage": {
     "contact-us": "Kontaktieren Sie uns",
@@ -70,5 +76,6 @@
     "privacy-data-desc-2": "3 Makram Ebeid, Al Mintaqah as Sādisah, Nasr City, Gouvernement Kairo, Ägypten ",
     "privacy-data-desc-3": "Steuer-Identifikationsnummer: 770627293",
     "privacy-data-desc-4": "Für Auskünfte oder zur Ausübung Ihrer Betroffenenrechte: info@kaiizn.com"
-  }
+  },
+  "ImprintPage": {}
 }

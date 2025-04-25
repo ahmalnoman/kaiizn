@@ -10,8 +10,8 @@ const Hero = () => {
   const t = useTranslations("HomePage");
 
   const { ref } = useTypewriting([
-    `${t("services").toUpperCase()}_`,
-    `${t("solutions").toUpperCase()}_`,
+    `${t("services").toUpperCase()}`,
+    `${t("solutions").toUpperCase()}`,
   ]);
 
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
               <div className="orange-border-bottom"></div>
             </div>
             <Image
-              src="hero.svg"
+              src="/hero.svg"
               alt=""
               width={600}
               height={600}

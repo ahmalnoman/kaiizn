@@ -1,9 +1,12 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
+  const t = useTranslations("HomePage");
+
   return (
     <section id="footer" className="footer-background">
       <div className="wrapper flow">
@@ -15,30 +18,30 @@ const Footer = () => {
             width={80}
             height={30}
           />
-          <p>KAIIZN© 2023-2025. All Rights Reserved.</p>
+          <p>{t("footer-rights")}</p>
         </div>
         <div className="footer-content">
-          <Link href="/privacy">PRIVACY & Cookies Policy</Link>
+          <Link href="/privacy">{t("footer-privacy-cookies")}</Link>
           <div className="flex-content_inner">
             <Image src="/telegram.svg" height={20} width={20} alt="" />
             <Link href="https://t.me/solnoman" target="_blank">
-              Telegram
+              {t("footer-telegram")}
             </Link>
           </div>
           <div className="flex-content_inner" data-link="calendly">
             <Image src="/meet.svg" height={20} width={20} alt="" />
             <Link href="https://calendly.com/kaiizn" target="_blank">
-              FOUNDER 1-O-1
+              {t("footer-founder")}
             </Link>
           </div>
-          <Link href="#">Imprint</Link>
+          <Link href="/imprint">{t("footer-imprint")}</Link>
           <div className="flex-content_inner">
             <Image src="/linkedin.svg" height={20} width={20} alt="" />
             <Link
               href="https://www.linkedin.com/company/kaiizn/"
               target="_blank"
             >
-              Linked-In
+              {t("footer-linkedin")}
             </Link>
           </div>
         </div>

@@ -68,7 +68,7 @@ const Header = () => {
                   <Link href="/#about">{t("about-us")}</Link>
                 </li>
                 <li>
-                  <Link href="/contact#contact">{t("contact-us")}</Link>
+                  <Link href="/contact">{t("contact-us")}</Link>
                 </li>
                 <li>
                   <Link

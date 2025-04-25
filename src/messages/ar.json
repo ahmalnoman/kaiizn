@@ -46,7 +46,13 @@
     "elite-talent": "مواهب نخبوية",
     "unlock-world": "افتح المجال أمام مواهب عالمية وحلول مبتكرة لتسريع نمو أعمالك وتحقيق رؤاك الجريئة",
     "connect": "تواصل",
-    "solutions": "الحلول"
+    "solutions": "الحلول",
+    "footer-rights": "جميع الحقوق محفوظة © 2023-2025 لشركة كايزن.",
+    "footer-privacy-cookies": "سياسة الخصوصية وملفات تعريف الارتباط",
+    "footer-imprint": "بصمة",
+    "footer-telegram": "تليجرام",
+    "footer-linkedin": "لينكدان",
+    "footer-founder": "المؤسس 1-0-1"
   },
   "ContactPage": {
     "contact-us": "اتصل بنا",
@@ -70,5 +76,6 @@
     "privacy-data-desc-2": "٣ شارع مكرم عبيد, المنطقة السادسة, مدينة نصر, محافظة القاهرة, مصر",
     "privacy-data-desc-3": "الرقم الضريبي: ٧٧٠٦٢٧٢٩٣",
     "privacy-data-desc-4": "للأستفسارات أو لممارسة حقوقك راسلنا علي :  info@kaiizn.com"
-  }
+  },
+  "ImprintPage": {}
 }
