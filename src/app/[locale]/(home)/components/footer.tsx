@@ -22,19 +22,14 @@ const Footer = () => {
         </div>
         <div className="footer-content">
           <Link href="/privacy">{t("footer-privacy-cookies")}</Link>
+          <Link href="/imprint">{t("footer-imprint")}</Link>
           <div className="flex-content_inner">
             <Image src="/telegram.svg" height={20} width={20} alt="" />
             <Link href="https://t.me/solnoman" target="_blank">
               {t("footer-telegram")}
             </Link>
           </div>
-          <div className="flex-content_inner" data-link="calendly">
-            <Image src="/meet.svg" height={20} width={20} alt="" />
-            <Link href="https://calendly.com/kaiizn" target="_blank">
-              {t("footer-founder")}
-            </Link>
-          </div>
-          <Link href="/imprint">{t("footer-imprint")}</Link>
+
           <div className="flex-content_inner">
             <Image src="/linkedin.svg" height={20} width={20} alt="" />
             <Link
@@ -42,6 +37,12 @@ const Footer = () => {
               target="_blank"
             >
               {t("footer-linkedin")}
+            </Link>
+          </div>
+          <div className="flex-content_inner" data-link="calendly">
+            <Image src="/meet.svg" height={20} width={20} alt="" />
+            <Link href="https://calendly.com/kaiizn" target="_blank">
+              {t("footer-founder")}
             </Link>
           </div>
         </div>
