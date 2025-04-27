@@ -66,6 +66,66 @@ const PrivacyNotice = () => {
           </div>
         </div>
       </section>
+      <section id="privacy">
+        <div className="wrapper flow">
+          <h1 className="title">{t("cookies-header")}</h1>
+          <div className="orange-border-bottom" data-width="medium"></div>
+          <div className="spacing">
+            <h2 className="sec-title">{t("why-cookies")}</h2>
+            <p>{t("why-cookies-desc")}</p>
+            <ul>
+              <li>{t("why-cookies-li-1")}</li>
+              <li>{t("why-cookies-li-2")}</li>
+              <li>{t("why-cookies-li-3")}</li>
+            </ul>
+            <p>{t("not-cookies")}</p>
+            <ul>
+              <li>{t("not-cookies-li-1")}</li>
+              <li>{t("not-cookies-li-2")}</li>
+              <li>{t("not-cookies-li-3")}</li>
+            </ul>
+          </div>
+          <div className="spacing">
+            <h2 className="sec-title">{t("legal-basis")}</h2>
+            <p>{t("legal-basis-desc")}</p>
+          </div>
+          <div className="spacing">
+            <h2 className="sec-title">{t("managing-cookies")}</h2>
+            <p>{t("managing-cookies-desc")}</p>
+          </div>
+          <div className="spacing">
+            <h2 className="sec-title">{t("your-rights")}</h2>
+            <p>{t("your-rights-desc-1")}</p>
+            <ul>
+              <li>{t("your-rights-li-1")}</li>
+              <li>{t("your-rights-li-2")}</li>
+              <li>{t("your-rights-li-3")}</li>
+              <li>{t("your-rights-li-4")}</li>
+            </ul>
+            <p>{t("your-rights-desc-2")}</p>
+          </div>
+          <div className="spacing">
+            <h2 className="sec-title">{t("security")}</h2>
+            <p>{t("security-desc")}</p>
+          </div>
+          <div className="spacing">
+            <h2 className="sec-title">{t("children-privacy")}</h2>
+            <p>{t("children-privacy-desc")}</p>
+          </div>
+          <div className="spacing">
+            <h2 className="sec-title">{t("changes")}</h2>
+            <p>{t("changes-desc")}</p>
+          </div>
+          <div className="spacing">
+            <h2 className="sec-title">{t("contact")}</h2>
+            <p>{t("contact-desc")}</p>
+            <ul>
+              <li>{t("contact-li-1")}</li>
+              <li>{t("contact-li-2")}</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </article>
   );
 };

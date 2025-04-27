@@ -687,8 +687,9 @@
     }
 
     .wrapper {
-      padding-block: 8rem;
+      margin-block: 8rem;
     }
+
     .orange-border-bottom {
       margin-block: 2rem;
       margin-inline: 0;
