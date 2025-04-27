@@ -695,6 +695,14 @@
     }
     .spacing {
       margin-block: 4rem;
+
+      li {
+        margin-block-end: 0.75rem;
+      }
+
+      h3 {
+        margin-block-end: 0.75rem;
+      }
     }
   }
   #imprint {
