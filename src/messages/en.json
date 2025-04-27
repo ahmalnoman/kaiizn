@@ -6,7 +6,8 @@
   },
   "Common": {
     "essential-cookies-accept": "We use <important>Essential Cookies: Session or load-balancing cookies that enable the site to function properly</important>. These do not track individual behavior or store personally identifiable information.",
-    "agree": "Agree"
+    "agree": "Agree",
+    "deny": "Deny"
   },
   "HomePage": {
     "menu": "Menu",

@@ -6,7 +6,8 @@
   },
   "Common": {
     "essential-cookies-accept": "Wir verwenden <important>Essenzielle Cookies: Sitzungs- oder Lastverteilungscookies, die das ordnungsgemäße Funktionieren der Website ermöglichen</important>. Diese verfolgen kein individuelles Verhalten und speichern keine personenbezogenen Daten.",
-    "agree": "Zustimmen"
+    "agree": "Zustimmen",
+    "deny": "Ablehnen"
   },
   "HomePage": {
     "menu": "Menü",
