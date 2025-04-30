@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 export default function CookieBanner() {
   const t = useTranslations("Common");
-
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -15,42 +14,39 @@ export default function CookieBanner() {
     }
   }, []);
 
-  const handleAgree = () => {
-    localStorage.setItem("cookieConsent", "true");
+  const handleAccept = () => {
+    localStorage.setItem("cookieConsent", "tru");
     setShowBanner(false);
   };
 
   const handleDeny = () => {
+    // TODO: Implement cookie customization logic
     setShowBanner(false);
   };
 
   return (
     <div
-      className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 max-w-xl w-full px-6 py-4 bg-indigo-600 shadow-2xl rounded-2xl border border-gray-500 transition-all duration-500 ease-in-out ${
+      className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 max-w-2xl w-[95%] p-8 bg-black/30 backdrop-blur-md shadow-lg rounded-2xl transition-all duration-500 ease-in-out border border-[1px] border-[#3e2ba7] ${
         showBanner
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-10 pointer-events-none"
       }`}
+      style={{ borderImage: 'linear-gradient(45deg, #0d0d0d 0%, #3e2ba7 50%, #0d0d0d 100%) 1' }}
     >
-      <div className="flex flex-col  items-start sm:items-center justify-between gap-4">
-        <p
-          className="text-white text-sm leading-relaxed"
-          dangerouslySetInnerHTML={{
-            __html: t.markup("essential-cookies-accept", {
-              important: (chunks) => `<b>${chunks}</b>`,
-            }),
-          }}
-        />
-        <div className="flex gap-2 sm:gap-4 mt-4 sm:mt-0">
+      <div className="flex flex-col gap-6">
+        <p className="text-white text-lg">
+          {t("essential-cookies-accept")}
+        </p>
+        <div className="flex gap-4 items-center">
           <button
-            onClick={handleAgree}
-            className="mt-2 sm:mt-0 shrink-0 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-xl transition-all duration-300 ease-in-out"
+            onClick={handleAccept}
+            className="px-8 py-3 bg-white hover:bg-gray-100 text-[#07071C] text-base font-medium rounded-lg transition-colors duration-300"
           >
             {t("agree")}
           </button>
           <button
             onClick={handleDeny}
-            className="mt-2 sm:mt-0 shrink-0 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-xl transition-all duration-300 ease-in-out"
+            className="px-8 py-3 border border-white text-white hover:bg-white/10 text-base font-medium rounded-lg transition-colors duration-300"
           >
             {t("deny")}
           </button>
