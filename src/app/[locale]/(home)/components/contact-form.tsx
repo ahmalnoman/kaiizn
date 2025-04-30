@@ -11,6 +11,7 @@ interface FormData {
   country: string;
   phone: string;
   message: string;
+  form_consent: boolean;
 }
 
 const ContactForm = () => {
@@ -22,13 +23,20 @@ const ContactForm = () => {
     country: "",
     phone: "",
     message: "",
+    form_consent: false,
   });
 
   const [status, setStatus] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => setFormData({ ...formData, [e.target.name]: e.target.value });
+  ) => {
+    const value =
+      e.target.type === "checkbox"
+        ? (e.target as HTMLInputElement).checked
+        : e.target.value;
+    setFormData({ ...formData, [e.target.name]: value });
+  };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -51,6 +59,7 @@ const ContactForm = () => {
               from_email: formData.email,
               from_country: formData.country,
               from_phone: formData.phone,
+              form_consent: formData.form_consent,
               message: formData.message,
             },
           }),
@@ -65,6 +74,7 @@ const ContactForm = () => {
           country: "",
           phone: "",
           message: "",
+          form_consent: false,
         });
       } else {
         setStatus("Failed to send email. Please try again later.");
@@ -134,17 +144,41 @@ const ContactForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">{t("tell-us-more")}</label>
-              <textarea
-                name="message"
-                id="message"
-                value={formData.message}
-                rows={4}
-                required
-                onChange={handleChange}
-              ></textarea>
+              <label className="relative flex items-start cursor-pointer group">
+                <input
+                  className="peer sr-only"
+                  type="checkbox"
+                  name="form_consent"
+                  checked={formData.form_consent}
+                  onChange={handleChange}
+                  required
+                />
+                <div
+                  className="w-[20px] h-[20px] rounded-md border-2 border-purple-500 peer-checked:bg-gradient-to-br from-purple-500 to-pink-500 peer-checked:border-0 grid place-items-center"
+                >
+                  <svg 
+                    className="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span className="ml-3 text-sm font-medium text-gray-100 mt-[1px]">
+                  {t("form_consent")}
+                </span>
+              </label>
             </div>
-            <button type="submit" className="button-lg" data-color="purple">
+            <button 
+              type="submit" 
+              className="button-lg" 
+              data-color="purple"
+              disabled={!formData.form_consent}
+            >
               {t("send")}
             </button>
             {status && <p>{status}</p>}
