@@ -4,13 +4,14 @@ import { useCallback, useEffect, useRef } from "react";
 
 const useTypewriting = (texts: string[]) => {
   const ref = useRef<HTMLElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   const typeWriter = useCallback(
     (textIndex = 0, charIndex = 0, isDeleting = false) => {
       if (!ref.current) return;
 
       const currentText = texts[textIndex];
-      const transitionSpeed = isDeleting ? 100 : 200; //faster deletion, slower typing
+      const transitionSpeed = isDeleting ? 100 : 200;
 
       ref.current.textContent = currentText.substring(0, charIndex);
 
@@ -18,7 +19,7 @@ const useTypewriting = (texts: string[]) => {
         charIndex++;
         if (charIndex > currentText.length) {
           isDeleting = true;
-          setTimeout(() => typeWriter(textIndex, charIndex, isDeleting), 1000);
+          timeoutRef.current = setTimeout(() => typeWriter(textIndex, charIndex, isDeleting), 1000);
           return;
         }
       } else {
@@ -28,7 +29,8 @@ const useTypewriting = (texts: string[]) => {
           textIndex = (textIndex + 1) % texts.length;
         }
       }
-      setTimeout(
+      
+      timeoutRef.current = setTimeout(
         () => typeWriter(textIndex, charIndex, isDeleting),
         transitionSpeed,
       );
@@ -38,6 +40,12 @@ const useTypewriting = (texts: string[]) => {
 
   useEffect(() => {
     typeWriter();
+    
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
   }, [typeWriter]);
 
   return { ref };
