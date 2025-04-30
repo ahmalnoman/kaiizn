@@ -16,7 +16,7 @@ const michroma = Michroma({
 });
 
 export const metadata: Metadata = {
-  title: "KAIIZN",
+  title: "KAIIZN | Top Talent Services & Solutions",
   description:
     "KAIZN is a leading software development house specializing in delivering innovative and tailored software solutions. We offer a wide range of services, including web and mobile app development, custom software solutions, and digital transformation strategies, helping businesses thrive in the digital age.",
   icons: {
@@ -43,9 +43,9 @@ export default async function LocaleRootLayout({
   const isRtl = rtlLocales.includes(locale);
 
   return (
-    <html lang="en" dir={isRtl ? "rtl" : "ltr"}>
+    <html lang="en" dir={isRtl ? "rtl" : "ltr"} suppressHydrationWarning>
       <NextIntlClientProvider>
-        <body className={`${inter.variable} ${michroma.variable} antialiased`}>
+        <body className={`${inter.variable} ${michroma.variable} antialiased`} suppressHydrationWarning>
           <CookieBanner />
           <BgMouseTrail />
           <div className="min-h-screen bg-black/25 w-full overflow-hidden">
