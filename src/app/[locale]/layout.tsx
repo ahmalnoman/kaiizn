@@ -15,12 +15,30 @@ const michroma = Michroma({
   weight: "400",
 });
 
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kaiizn.com"), // Add your production base URL here
   title: "KAIIZN | Top Talent Services & Solutions",
   description:
-    "KAIZN is a leading software development house specializing in delivering innovative and tailored software solutions. We offer a wide range of services, including web and mobile app development, custom software solutions, and digital transformation strategies, helping businesses thrive in the digital age.",
+    "KAIIZN is a leading software development house specializing in delivering innovative and tailored software solutions. We offer a wide range of services, including web and mobile app development, custom software solutions, and digital transformation strategies, helping businesses thrive in the digital age.",
   icons: {
     icon: "/favicon-16x16.png",
+  },
+  openGraph: {
+    title: "KAIIZN | Top Talent Services & Solutions",
+    description:
+      "KAIIZN is a leading software development house specializing in delivering innovative and tailored software solutions.",
+    url: "https://kaiizn.com",
+    siteName: "KAIIZN",
+    images: [
+      {
+        url: "/company-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "KAIIZN Logo",
+      },
+    ],
+    type: "website",
   },
 };
 
@@ -41,6 +59,7 @@ export default async function LocaleRootLayout({
 
   const rtlLocales = ["ar"];
   const isRtl = rtlLocales.includes(locale);
+  
 
   return (
     <html lang="en" dir={isRtl ? "rtl" : "ltr"} suppressHydrationWarning>
