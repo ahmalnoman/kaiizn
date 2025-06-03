@@ -12,10 +12,12 @@ export async function generateStaticParams() {
 
 export const metadata: Metadata = {
   title: "Contact Us | KAIIZN",
-  description: "Get in touch with KAIIZN for innovative software solutions and expert services.",
+  description:
+    "Get in touch with KAIIZN for innovative software solutions and expert services.",
   openGraph: {
     title: "Contact Us | KAIIZN",
-    description: "Reach out to KAIIZN for tailored software solutions and expert advice.",
+    description:
+      "Reach out to KAIIZN for tailored software solutions and expert advice.",
     url: "https://kaiizn.com/contact",
     siteName: "KAIIZN",
     images: [

@@ -19,7 +19,10 @@ const useTypewriting = (texts: string[]) => {
         charIndex++;
         if (charIndex > currentText.length) {
           isDeleting = true;
-          timeoutRef.current = setTimeout(() => typeWriter(textIndex, charIndex, isDeleting), 1000);
+          timeoutRef.current = setTimeout(
+            () => typeWriter(textIndex, charIndex, isDeleting),
+            1000,
+          );
           return;
         }
       } else {
@@ -29,7 +32,7 @@ const useTypewriting = (texts: string[]) => {
           textIndex = (textIndex + 1) % texts.length;
         }
       }
-      
+
       timeoutRef.current = setTimeout(
         () => typeWriter(textIndex, charIndex, isDeleting),
         transitionSpeed,
@@ -40,7 +43,7 @@ const useTypewriting = (texts: string[]) => {
 
   useEffect(() => {
     typeWriter();
-    
+
     return () => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);

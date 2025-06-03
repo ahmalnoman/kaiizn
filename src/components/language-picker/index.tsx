@@ -20,7 +20,7 @@ export default function LanguagePicker({
   onChange,
 }: Props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isPending, startTransition] = useTransition();
+  const startTransition = useTransition()[1];
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const selectedLang = languages.find((lang) => lang.code === selected);

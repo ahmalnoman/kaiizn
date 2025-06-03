@@ -31,12 +31,13 @@ export default function CookieBanner() {
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-10 pointer-events-none"
       }`}
-      style={{ borderImage: 'linear-gradient(45deg, #0d0d0d 0%, #3e2ba7 50%, #0d0d0d 100%) 1' }}
+      style={{
+        borderImage:
+          "linear-gradient(45deg, #0d0d0d 0%, #3e2ba7 50%, #0d0d0d 100%) 1",
+      }}
     >
       <div className="flex flex-col gap-6">
-        <p className="text-white text-lg">
-          {t("essential-cookies-accept")}
-        </p>
+        <p className="text-white text-lg">{t("essential-cookies-accept")}</p>
         <div className="flex gap-4 items-center">
           <button
             onClick={handleAccept}

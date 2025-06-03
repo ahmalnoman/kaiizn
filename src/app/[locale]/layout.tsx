@@ -15,7 +15,6 @@ const michroma = Michroma({
   weight: "400",
 });
 
-
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL as string),
   title: "KAIIZN | Top Talent Services & Solutions",
@@ -59,12 +58,14 @@ export default async function LocaleRootLayout({
 
   const rtlLocales = ["ar"];
   const isRtl = rtlLocales.includes(locale);
-  
 
   return (
     <html lang="en" dir={isRtl ? "rtl" : "ltr"} suppressHydrationWarning>
       <NextIntlClientProvider>
-        <body className={`${inter.variable} ${michroma.variable} antialiased`} suppressHydrationWarning>
+        <body
+          className={`${inter.variable} ${michroma.variable} antialiased`}
+          suppressHydrationWarning
+        >
           <CookieBanner />
           <BgMouseTrail />
           <div className="min-h-screen bg-black/25 w-full overflow-hidden">

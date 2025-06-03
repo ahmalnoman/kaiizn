@@ -153,10 +153,8 @@ const ContactForm = () => {
                   onChange={handleChange}
                   required
                 />
-                <div
-                  className="w-[20px] h-[20px] rounded-md border-2 border-purple-500 peer-checked:bg-gradient-to-br from-purple-500 to-pink-500 peer-checked:border-0 grid place-items-center"
-                >
-                  <svg 
+                <div className="w-[20px] h-[20px] rounded-md border-2 border-purple-500 peer-checked:bg-gradient-to-br from-purple-500 to-pink-500 peer-checked:border-0 grid place-items-center">
+                  <svg
                     className="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -173,9 +171,9 @@ const ContactForm = () => {
                 </span>
               </label>
             </div>
-            <button 
-              type="submit" 
-              className="button-lg" 
+            <button
+              type="submit"
+              className="button-lg"
               data-color="purple"
               disabled={!formData.form_consent}
             >

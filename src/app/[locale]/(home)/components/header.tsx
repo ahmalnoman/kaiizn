@@ -2,8 +2,8 @@
 
 import LanguagePicker from "@/components/language-picker";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import { i18nLocales, routing } from "@/i18n/routing";
-import { useLocale, useTranslations } from "next-intl";
+import { i18nLocales } from "@/i18n/routing";
+import { Messages, useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -84,7 +84,7 @@ const Header = () => {
                   <LanguagePicker
                     languages={i18nLocales.map((locale) => ({
                       ...locale,
-                      label: i18nT(locale.label as any),
+                      label: i18nT(locale.label as keyof Messages["I18n"]),
                     }))}
                     lang={locale}
                     onChange={(locale) => router.replace(pathname, { locale })}
