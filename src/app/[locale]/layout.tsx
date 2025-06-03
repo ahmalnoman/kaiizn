@@ -59,8 +59,16 @@ export default async function LocaleRootLayout({
   const rtlLocales = ["ar"];
   const isRtl = rtlLocales.includes(locale);
 
+  // Dynamically generate the canonical URL
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
+  const canonicalUrl = `${baseUrl}/${locale}`;
+
   return (
-    <html lang="en" dir={isRtl ? "rtl" : "ltr"} suppressHydrationWarning>
+    <html lang={locale} dir={isRtl ? "rtl" : "ltr"} suppressHydrationWarning>
+      <head>
+        {/* Canonical Tag */}
+        <link rel="canonical" href={canonicalUrl} />
+      </head>
       <NextIntlClientProvider>
         <body
           className={`${inter.variable} ${michroma.variable} antialiased`}
