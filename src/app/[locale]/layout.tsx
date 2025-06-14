@@ -16,7 +16,9 @@ const michroma = Michroma({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL as string),
+  metadataBase: new URL(
+    (process.env.NEXT_PUBLIC_BASE_URL as string) || "https://kaiizn.com",
+  ),
   title: "KAIIZN | Top Talent Services & Solutions",
   description:
     "KAIIZN is a leading software development house specializing in delivering innovative and tailored software solutions. We offer a wide range of services, including web and mobile app development, custom software solutions, and digital transformation strategies, helping businesses thrive in the digital age.",

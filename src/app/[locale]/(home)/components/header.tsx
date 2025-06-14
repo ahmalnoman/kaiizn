@@ -5,8 +5,8 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { i18nLocales } from "@/i18n/routing";
 import { Messages, useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
+import { Link } from "@/i18n/navigation";
 
 const Header = () => {
   const t = useTranslations("HomePage");

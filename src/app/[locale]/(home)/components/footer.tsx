@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import Image from "next/image";
+import { Link } from "@/i18n/navigation";
 
 const Footer = () => {
   const t = useTranslations("HomePage");
@@ -22,7 +22,9 @@ const Footer = () => {
         </div>
         <div className="footer-content">
           <Link href="/privacy">{t("footer-privacy-cookies")}</Link>
+
           <Link href="/imprint">{t("footer-imprint")}</Link>
+
           <div className="flex-content_inner">
             <Image src="/telegram.svg" height={20} width={20} alt="" />
             <Link href="https://t.me/solnoman" target="_blank">
@@ -43,6 +45,17 @@ const Footer = () => {
             <Image src="/meet.svg" height={20} width={20} alt="" />
             <Link href="https://calendly.com/kaiizn" target="_blank">
               {t("footer-founder")}
+            </Link>
+          </div>
+          <div className="flex-content_inner" data-link="x">
+            <Link href="https://x.com/kaiiznllc" target="_blank">
+              <Image
+                src="x.svg"
+                height={30}
+                width={30}
+                alt=""
+                className="x-icon"
+              />
             </Link>
           </div>
         </div>
