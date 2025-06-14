@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="flex-content_inner" data-link="x">
             <Link href="https://x.com/kaiiznllc" target="_blank">
               <Image
-                src="x.svg"
+                src="/x.svg"
                 height={30}
                 width={30}
                 alt=""
