@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import "./home.css";
 import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
+import Scrollbar from "./components/scrollbar";
 
 export async function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -25,6 +26,7 @@ export default async function Home({
       <Header />
       <main>
         <Hero />
+        <Scrollbar />
         <Services />
         <About />
       </main>
